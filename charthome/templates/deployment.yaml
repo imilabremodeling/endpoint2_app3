@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: remodeling-container
-        image: imilabremodeling/endpoint2_app2:{{ .Values.deployment.image.tag }}
+        image: imilabremodeling/endpoint2_app3:{{ .Values.deployment.image.tag }}
         command: ["/bin/sh"]
         args: ["-c", "while true; do python3 /home/jovyan/train-code/train.py;sleep 3000;done"]
         ports:
